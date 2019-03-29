@@ -62,7 +62,6 @@ class Mem {
   }
 
   head() {
-
     return this.queue.slice(0, this.max);
   }
 

@@ -28,5 +28,16 @@ var a = new Mem(async (a) => {
 
 Adding Elements to the Memory
 ```js
-  a.add(3);
+// adding 3 to the array
+a.add(3);
+// queue
+console.log(a.queue)
+// Output: [3]
+
+// Online worker this gives the data on which the worker is currently running
+console.log(a.online)
+
+// Offline Worker: this returns the array of the data the worker has completed.
+console.log(a.offline);
+
 ```
