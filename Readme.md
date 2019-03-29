@@ -2,9 +2,9 @@
 
 This class contains a queue and a worker that will automatically run a pre-initialized function on adding an element in the queue, as well as we can define the number of workers to simultaneously consume the elements in the queue
 
-  - Type some Markdown on the left
+  <!-- - Type some Markdown on the left
   - See HTML in the right
-  - Magic
+  - Magic -->
 
 ```js
 // const Mem = require("./mem");
@@ -23,4 +23,10 @@ var a = new Mem(async (a) => {
     });
 }, null, 10);
 
+```
+
+
+Adding Elements to the Memory
+```js
+  a.add(3);
 ```

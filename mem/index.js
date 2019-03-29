@@ -1,11 +1,11 @@
 class Mem {
-  constructor(fn, record = null) {
+  constructor(fn, record = null, max = 5) {
     // Queue
     // console.log(record);
 
     this.online = [];
     this.offline = [];
-    this.max = 5;
+    this.max = max;
     this.workerDef(fn);
 
     if (record === null) {
