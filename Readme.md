@@ -11,7 +11,12 @@ This class contains a queue and a worker that will automatically run a pre-initi
 import Mem from './mem';
 
 
-// new Mem()
+/*
+  @Params: fn, data, workers
+    fn: Function to run in the worker,
+    data: initial queue data
+    workers: number of workers to use
+*/
 var a = new Mem(async (a) => {
     return new Promise(async (resolve, reject) => {
         // Do something here
